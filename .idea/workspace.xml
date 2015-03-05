@@ -396,14 +396,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="protractorConfig.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="protractorConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protractorConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41551542" vertical-offset="0" max-vertical-offset="1190">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="URLS.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers/URLS.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SYSTEST.MyTestName.data.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/TestData/SYSTEST.MyTestName.data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32518598" vertical-offset="0" max-vertical-offset="941">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -458,8 +478,9 @@
         <option value="$PROJECT_DIR$/tests/TestData/SYSTEST.CreateOrderAsPrincipalWithData.data.js" />
         <option value="$PROJECT_DIR$/protractorConfig.js" />
         <option value="$PROJECT_DIR$/tests/vanilla.pro.js" />
-        <option value="$PROJECT_DIR$/helpers/URLS.js" />
         <option value="$PROJECT_DIR$/tests/runTemp.bat" />
+        <option value="$PROJECT_DIR$/helpers/URLS.js" />
+        <option value="$PROJECT_DIR$/data/TestData/SYSTEST.MyTestName.data.js" />
       </list>
     </option>
   </component>
@@ -584,6 +605,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parsley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parsley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestData" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -785,14 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/URLS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25292242" vertical-offset="0" max-vertical-offset="941">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/runTemp.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
@@ -811,11 +842,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protractorConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41551542" vertical-offset="0" max-vertical-offset="1190">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/URLS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TestData/SYSTEST.MyTestName.data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32518598" vertical-offset="0" max-vertical-offset="941">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

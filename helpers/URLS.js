@@ -4,7 +4,6 @@ var Urls = (function () {
         dict.set('SYSTEST', 'http://www.google.com');
         dict.set('LIVE', 'http://www.google.com');
         dict.set('UAT', 'http://www.google.com');
-        dict.set('LIVE', 'http://www.google.com');
         dict.set('LOCAL', 'http://localhost');
         dict.set('LOCALHOST', 'http://localhost');
     };
