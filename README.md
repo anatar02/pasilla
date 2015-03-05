@@ -1,5 +1,5 @@
 # parsley
-A test framework for protractor.
+A test framework for Protractor.
 
 **Dependencies**
 * Node package ***[protractor](https://www.npmjs.com/package/protractor)*** - npm install protractor -g
