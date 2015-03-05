@@ -1,0 +1,12 @@
+<convert2exe>
+    <path>C:\GitHub\automated_tests_ArgusOpenMarkets\AOM\AOMUI\automated_tests\tests\GenerateMultiScriptnProJS.exe</path>
+    <uacLevel>asInvoker</uacLevel>
+    <dependencies />
+    <build>32bit</build>
+    <details>
+        <version>1.0.0.0</version>
+        <description>Generate Multiple Test Script and Pro JS Files</description>
+        <productName>Generate Multiple Test Script and Pro JS Files</productName>
+        <copyright>Copyright (C) 2015</copyright>
+    </details>
+</convert2exe>
