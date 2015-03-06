@@ -1,6 +1,7 @@
 var TestData = (function () {
 	   function TestData() {}
 	    TestData.prototype.load = function (dictData) {
+		dictData.set('#SESSION1.USERNAME#', 'AB');
 		dictData.set('#NAME#', 'value');
 		dictData.set('#RANDOM1#', '{RANDOM(100, 20000, 10)}');
 		dictData.set('#{RANDOM1}#', 'RANDOM(100, 20000, 10)');
@@ -12,7 +13,6 @@ var TestData = (function () {
 		dictData.set('#VERSION#', '1');
 		dictData.set('#CREATEME#', 'True');
 	};
-
-    return TestData;
+		return TestData;
 })();
 module.exports = TestData;

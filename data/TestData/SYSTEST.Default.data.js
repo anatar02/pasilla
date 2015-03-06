@@ -1,6 +1,7 @@
 var TestData = (function () {
 	   function TestData() {}
 	    TestData.prototype.load = function (dictData) {
+		dictData.set('#SESSION1.USERNAME#', 'AB');
 		dictData.set('#NAME#', 'value');
 		dictData.set('#RANDOM1#', '{RANDOM(100, 20000, 10)}');
 		dictData.set('#{RANDOM1}#', 'RANDOM(100, 20000, 10)');

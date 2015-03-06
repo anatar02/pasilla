@@ -20,7 +20,7 @@ exports.config = {
         replace({
             regex: "key.webdriver = require",
             replacement: "//key.webdriver  =  require",
-            paths: ['../node_modules/keyword/lib/keyword.js'],
+            paths: ['./node_modules/keyword/lib/keyword.js'],
             recursive: false,
             silent: true
         });

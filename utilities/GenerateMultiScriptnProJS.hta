@@ -85,7 +85,7 @@ Sub WriteScriptJSFiles
 		    Set oWorkBook = oXL.Workbooks.Open(oXLSFile.Path)
 		
 			Set oFS = CreateObject("Scripting.FileSystemObject")
-			sVanillaFolder = oWorkbook.Path & "\"  
+			sVanillaFolder = oXLSFS.GetParentFolderName(oWorkbook.Path) & "\templates\"  
 			sTargetFolder = oWorkbook.Path & "\" & Left(oWorkbook.Name, (InStrRev(oWorkbook.Name, ".", -1, vbTextCompare) - 1)) & "\"
 			
 			On Error Resume Next
