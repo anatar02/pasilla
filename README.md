@@ -1,4 +1,4 @@
-# pasillla
+# pasilla
 A test framework for Protractor.
 
 **Dependencies**
