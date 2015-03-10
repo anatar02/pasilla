@@ -2,7 +2,7 @@ var Dictionary = require('dictionaryjs');
 var dictData = new Dictionary();
 
 try {
-    var TestData = require("../../tests/TestData/" + browser.params.testEnv + ".MyTestName.data.js");
+    var TestData = require("../../data/TestData/" + browser.params.testEnv + ".AngularJSYourName.data.js");
     var testData = new TestData();
     testData.load(dictData);
 } catch(err) {
@@ -11,9 +11,9 @@ try {
 
 // -------------------------------------------------------------------------
 // -------------------------------------------------------------------------
-describe('Pre-test setup for MyTestName', function () {
+describe('Pre-test setup for AngularJSYourName', function () {
 
-    it("Set PLACEHOLDERs for MyTestName test script", function () {
+    it("Set PLACEHOLDERs for AngularJSYourName test script", function () {
         var replace = require("replace");
         var sReplacement = "";
 
@@ -38,7 +38,7 @@ describe('Pre-test setup for MyTestName', function () {
                     replace({
                         regex: dicValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                         replacement: sReplacement,
-                        paths: ["./tests/TestData/" + browser.params.testEnv + ".MyTestName.data.js"],
+                        paths: ["./data/TestData/" + browser.params.testEnv + ".AngularJSYourName.data.js"],
                         recursive: false,
                         silent: true
                     });
@@ -55,7 +55,7 @@ describe('Pre-test setup for MyTestName', function () {
                     replace({
                         regex: dicValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), 
                         replacement: sReplacement,
-                        paths: ["./tests/TestData/" + browser.params.testEnv + ".MyTestName.data.js"],
+                        paths: ["./data/TestData/" + browser.params.testEnv + ".AngularJSYourName.data.js"],
                         recursive: false,
                         silent: true
                     });
@@ -68,7 +68,7 @@ describe('Pre-test setup for MyTestName', function () {
                     replace({
                         regex: sResetOrigLine.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                         replacement: sResetNewLine,
-                        paths: ["./tests/TestData/" + browser.params.testEnv + ".MyTestName.data.js"],
+                        paths: ["./data/TestData/" + browser.params.testEnv + ".AngularJSYourName.data.js"],
                         recursive: false,
                         silent: true
                     });

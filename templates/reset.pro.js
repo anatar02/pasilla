@@ -2,7 +2,7 @@ var Dictionary = require('dictionaryjs');
 var dictData = new Dictionary();
 
 try {
-    var TestData = require("../../tests/TestData/" + browser.params.testEnv + ".vanillaTestName.data.js");
+    var TestData = require("../../data/TestData/" + browser.params.testEnv + ".vanillaTestName.data.js");
     var testData = new TestData();
     testData.load(dictData);
 } catch(err) {
@@ -29,7 +29,7 @@ describe('Post-test reset for vanillaTestName', function () {
                     replace({
                         regex: sKey + ', .*',
                         replacement: sReplacement,
-                        paths: ["./tests/TestData/" + browser.params.testEnv + ".vanillaTestName.data.js"],
+                        paths: ["./data/TestData/" + browser.params.testEnv + ".vanillaTestName.data.js"],
                         recursive: false,
                         silent: true
                     });

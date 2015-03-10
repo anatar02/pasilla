@@ -5,7 +5,7 @@ var Dictionary = require('dictionaryjs');
 
 var dictData = new Dictionary();
 try {
-    var TestData = require("../../data/TestData/" + browser.params.testEnv + ".MyTestName.data.js");
+    var TestData = require("../../data/TestData/" + browser.params.testEnv + ".AngularJSYourName.data.js");
     var testData = new TestData();
     testData.load(dictData);
 } catch(err) {
@@ -18,7 +18,7 @@ var urls = new Urls();
 urls.load(dictURLS);
 
 // -----------------------------------------------------------------------------
-describe('MyTestName.Session1', function () {
+describe('AngularJSYourName.Session1', function () {
     var iStep = 1;
 
     browser.get(dictURLS.get(browser.params.testEnv.toUpperCase()));

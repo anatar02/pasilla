@@ -2,7 +2,7 @@ var Dictionary = require('dictionaryjs');
 var dictData = new Dictionary();
 
 try {
-    var TestData = require("../../tests/TestData/" + browser.params.testEnv + ".MyTestName.data.js");
+    var TestData = require("../../data/TestData/" + browser.params.testEnv + ".AngularJSYourName.data.js");
     var testData = new TestData();
     testData.load(dictData);
 } catch(err) {
@@ -10,9 +10,9 @@ try {
 
 }// -------------------------------------------------------------------------
 // -------------------------------------------------------------------------
-describe('Post-test reset for MyTestName', function () {
+describe('Post-test reset for AngularJSYourName', function () {
 
-    it("Reset PLACEHOLDERs for MyTestName test script", function () {
+    it("Reset PLACEHOLDERs for AngularJSYourName test script", function () {
         var replace = require("replace");
 
         var sKey = "";
@@ -29,7 +29,7 @@ describe('Post-test reset for MyTestName', function () {
                     replace({
                         regex: sKey + ', .*',
                         replacement: sReplacement,
-                        paths: ["./tests/TestData/" + browser.params.testEnv + ".MyTestName.data.js"],
+                        paths: ["./data/TestData/" + browser.params.testEnv + ".AngularJSYourName.data.js"],
                         recursive: false,
                         silent: true
                     });
