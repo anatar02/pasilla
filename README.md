@@ -2,7 +2,7 @@
 
 The pasilla chile (literally "little raisin") is the dried form of the chilaca chili pepper, a mild to medium-hot, rich-flavored chile. 
 
-A <font color="red">hot</font> little test framework for Protractor.
+A hot little test framework for Protractor.
 
 ### Acknowledgements
 Pasilla relies heavily on the **[keyword](https://www.npmjs.com/package/keyword)** node package. My thanks for this and for the other node packages listed as dependencies below.
