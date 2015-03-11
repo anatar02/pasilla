@@ -1,7 +1,12 @@
-# pasilla
-A test framework for Protractor.
+# pasilla [pah-SEE-ya]
+
+The pasilla chile (literally "little raisin") is the dried form of the chilaca chili pepper, a mild to medium-hot, rich-flavored chile. 
+
+A hot new test framework for Protractor.
 
 **Dependencies**
+* __[Node.js](https://nodejs.org)__ 
+
 * Node package ***[protractor](https://www.npmjs.com/package/protractor)*** - npm install protractor -g
 * Node package ***[keyword](https://www.npmjs.com/package/keyword)*** - npm install keyword
 * Node package ***[dictionaryjs](https://www.npmjs.com/package/dictionaryjs)*** - npm install dictionaryjs
