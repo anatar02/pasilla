@@ -4,6 +4,11 @@ The pasilla chile (literally "little raisin") is the dried form of the chilaca c
 
 A hot new test framework for Protractor.
 
+### Acknowledgements
+Pasilla relies heavily on the ***[keyword](https://www.npmjs.com/package/keyword)*** node package. My thanks for this and for the other node packages listed as dependencies below.
+
+A special mention goes to **[Chris Roberts-York](https://github.com/ChrisRobertsYork)** and **[Ivan Kadev](https://github.com/ivkad)** for their invaluable involvement.
+
 ## Dependencies
 * __[Node.js](https://nodejs.org)__ 
 
