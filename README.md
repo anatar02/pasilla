@@ -1,8 +1,9 @@
-# <img width="67" src="https://github.com/jenglezou/pasilla/blob/master/documentation/ImagesForWiki/flame-clipart-red-flame-hi.png"/> pasilla [pah-SEE-ya] 
+# <img width="67" src="https://github.com/jenglezou/pasilla/blob/master/documentation/ImagesForWiki/flame-clipart-red-flame-hi.png"/> pasilla 
 
-The pasilla chile (literally "little raisin") is the dried form of the chilaca chili pepper, a mild to medium-hot, rich-flavoured chile. 
+Noun (plural **pasillas**) - pronounced **[pah-SEE-ya]**
 
-**A hot little test framework for Protractor.**
+1. a variety of chili (literally "little raisin") is the dried form of the chilaca chili pepper, used especially in sauces.
+2. a hot little test framework for Protractor.
 
 ### Acknowledgements
 Pasilla relies heavily on the **[keyword](https://www.npmjs.com/package/keyword)** node package. My thanks for this and for the other node packages listed as dependencies below.
