@@ -3,7 +3,7 @@
 Noun (plural **pasillas**) - pronounced **[pah-SEE-ya]**
 
 1. a variety of chili (literally "little raisin") is the dried form of the chilaca chili pepper, used especially in sauces.
-2. a hot little test framework for Protractor.
+2. a hot little test framework for [AngularJS](https://angularjs.org/) using [Protractor](https://www.npmjs.com/package/protractor).
 
 ### Acknowledgements
 Pasilla relies heavily on the **[keyword](https://www.npmjs.com/package/keyword)** node package. My thanks for this and for the other node packages listed as dependencies below.
