@@ -1,4 +1,4 @@
-# <img width="50" src="https://github.com/jenglezou/pasilla/blob/master/documentation/ImagesForWiki/flame-clipart-red-flame-hi.png"/> pasilla [pah-SEE-ya] 
+# <img width="67" src="https://github.com/jenglezou/pasilla/blob/master/documentation/ImagesForWiki/flame-clipart-red-flame-hi.png"/> pasilla [pah-SEE-ya] 
 
 The pasilla chile (literally "little raisin") is the dried form of the chilaca chili pepper, a mild to medium-hot, rich-flavoured chile. 
 
