@@ -2,7 +2,7 @@
 
 Noun (plural **pasillas**) - pronounced **[pah-SEE-ya]**
 
-1. a variety of chili (literally "little raisin") is the dried form of the chilaca chili pepper, used especially in sauces.
+1. a variety of chili (literally "little raisin"), it is the dried form of the chilaca chili pepper, used especially in sauces.
 2. a hot little test framework for [AngularJS](https://angularjs.org/) using [Protractor](https://www.npmjs.com/package/protractor).
 
 ### Acknowledgements
