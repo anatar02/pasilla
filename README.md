@@ -23,5 +23,8 @@ A special mention goes to [Chris Roberts-York](https://github.com/ChrisRobertsYo
 **Optional**
 * Node package [async](https://www.npmjs.com/package/async) - npm install async
 
-## Intro
-Pasilla is a framework that generates Protractor tests from keyword and data-driven test scripts. It delivers test script readability and ease-of-use whilst maintaining the benefits of the Protractor's Jasmine BDD format and its integration with IDEs and CI tools. The Protractor JavaScript code behind the keyword still has to be developed but Pasilla helps with this by standardising the way in which the keyword program code is written - how it is called, how it handles data passed to it, and how it can be reused and combined with other keywords.
+## About Pasilla
+Pasilla is a framework that generates Protractor tests from keyword and data-driven test scripts. It delivers test script readability and ease-of-use whilst maintaining the benefits of Protractor's Jasmine BDD format and its integration with IDEs and CI tools. The program code behind each keyword still needs to be written in JavaScript. Pasilla helps with this by standardising the way in which the keyword code is written - how it is called, how it handles data passed to it, and how it can be reused and combined with other keywords.
+
+The [wiki](https://github.com/jenglezou/pasilla/wiki) (see the sidebar on the right-hand side) contains more information.
+
