@@ -6,22 +6,22 @@ Noun (plural **pasillas**) - pronounced **[pah-SEE-ya]**
 2. a hot little test framework for [AngularJS](https://angularjs.org/) using [Protractor](https://www.npmjs.com/package/protractor).
 
 ### Acknowledgements
-Pasilla relies heavily on the **[keyword](https://www.npmjs.com/package/keyword)** node package. My thanks for this and for the other node packages listed as dependencies below.
+Pasilla relies heavily on the [keyword](https://www.npmjs.com/package/keyword) node package. Thanks for this and also for the other node packages listed as dependencies below.
 
 A special mention goes to [Chris Roberts-York](https://github.com/ChrisRobertsYork) and [Ivan Kadev](https://github.com/ivkad) for their invaluable involvement.
 
 ## Dependencies
-* __[Node.js](https://nodejs.org)__ 
-
-* Node package ***[protractor](https://www.npmjs.com/package/protractor)*** - npm install protractor -g
-* Node package ***[keyword](https://www.npmjs.com/package/keyword)*** - npm install keyword
-* Node package ***[dictionaryjs](https://www.npmjs.com/package/dictionaryjs)*** - npm install dictionaryjs
-* Node package ***[replace](https://www.npmjs.com/package/replace)*** - npm install replace
-* Node package ***[jasmine-reporters](https://www.npmjs.com/package/jasmine-reporters)*** - npm install jasmine-reporters@1.0.1
-* Node package ***[jasmine-spec-reporter](https://www.npmjs.com/package/jasmine-spec-reporter)*** - npm install jasmine-spec-reporter@1.1.0
+* [Node.js](https://nodejs.org) platform
+* Node package [protractor](https://www.npmjs.com/package/protractor) - npm install protractor -g
+* [Java](https://java.com/en/download) - needed for the selenium-standalone-server that protractor uses
+* Node package [keyword](https://www.npmjs.com/package/keyword) - npm install keyword
+* Node package [dictionaryjs](https://www.npmjs.com/package/dictionaryjs) - npm install dictionaryjs
+* Node package [replace](https://www.npmjs.com/package/replace) - npm install replace
+* Node package [jasmine-reporters](https://www.npmjs.com/package/jasmine-reporters) - npm install jasmine-reporters@1.0.1
+* Node package [jasmine-spec-reporter](https://www.npmjs.com/package/jasmine-spec-reporter) - npm install jasmine-spec-reporter@1.1.0
 
 **Optional**
-* Node package ***[async](https://www.npmjs.com/package/async)*** - npm install async
+* Node package [async](https://www.npmjs.com/package/async) - npm install async
 
 ## Intro
 Pasilla is a framework that allows a tester to create Protractor tests without writing any JavaScript code.  The tester uses familiar tools to simply assemble a sequence of keywords and data into a test script.  Excel is used to create the test script and is also used to maintain a centralised store of test data.  Pasilla provides utilities to automatically convert the Excel test script and data into pure JavaScript Protractor code.  This means that the tests can be run using any tool that supports Protractor like WebStorm IDE, Grunt and TeamCity.  So, Pasilla takes the pain out of developing Protractor tests without losing the benefits of the Jasmine BDD format and the integration with other tools.
