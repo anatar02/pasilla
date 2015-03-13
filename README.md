@@ -26,5 +26,5 @@ A special mention goes to [Chris Roberts-York](https://github.com/ChrisRobertsYo
 ## About Pasilla
 Pasilla makes Protractor accessible to those users who want to create end-to-end tests but are are not comfortable with coding in Javascript within the Jasmine BDD framework or, to be frank, other BDD languages like Gherkin. So, with those users in mind, Pasilla is a framework that generates Protractor tests from keyword and data-driven test scripts. It neatly introduces a tabular keyword-driven scripting capability whilst keeping the benefits of the Protractor's Jasmine BDD format and its integration with IDEs and CI tools. The program code behind each keyword still needs to be written in JavaScript by a developer. Pasilla helps with this by standardising the way in which the keyword code is written - how it is called, how it handles data passed to it, and how it can be reused and combined with other keywords.
 
-The [wiki](https://github.com/jenglezou/pasilla/wiki) (see the sidebar on the right-hand side) contains more information.
+The [wiki](https://github.com/jenglezou/pasilla/wiki) (see the sidebar on the right-hand side) provides more information.
 
