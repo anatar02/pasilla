@@ -2,29 +2,29 @@
 
 Noun (plural **pasillas**) - pronounced **[pah-SEE-ya]**
 
-1. a variety of chili (literally "little raisin") is the dried form of the chilaca chili pepper, used especially in sauces.
+1. a variety of chili (literally "little raisin"), it is the dried form of the chilaca chili pepper, used especially in sauces.
 2. a hot little test framework for [AngularJS](https://angularjs.org/) using [Protractor](https://www.npmjs.com/package/protractor).
 
 ### Acknowledgements
-Pasilla relies heavily on the **[keyword](https://www.npmjs.com/package/keyword)** node package. My thanks for this and for the other node packages listed as dependencies below.
+Pasilla relies heavily on the [keyword](https://www.npmjs.com/package/keyword) node package. Thanks for this and also for the other node packages listed as dependencies below.
 
 A special mention goes to [Chris Roberts-York](https://github.com/ChrisRobertsYork) and [Ivan Kadev](https://github.com/ivkad) for their invaluable involvement.
 
 ## Dependencies
-* __[Node.js](https://nodejs.org)__ 
-
-* Node package ***[protractor](https://www.npmjs.com/package/protractor)*** - npm install protractor -g
-* Node package ***[keyword](https://www.npmjs.com/package/keyword)*** - npm install keyword
-* Node package ***[dictionaryjs](https://www.npmjs.com/package/dictionaryjs)*** - npm install dictionaryjs
-* Node package ***[replace](https://www.npmjs.com/package/replace)*** - npm install replace
-* Node package ***[jasmine-reporters](https://www.npmjs.com/package/jasmine-reporters)*** - npm install jasmine-reporters@1.0.1
-* Node package ***[jasmine-spec-reporter](https://www.npmjs.com/package/jasmine-spec-reporter)*** - npm install jasmine-spec-reporter@1.1.0
+* [Node.js](https://nodejs.org) platform
+* Node package [protractor](https://www.npmjs.com/package/protractor) - npm install protractor -g
+* [Java](https://java.com/en/download) - needed for the selenium-standalone-server that protractor uses
+* Node package [keyword](https://www.npmjs.com/package/keyword) - npm install keyword
+* Node package [dictionaryjs](https://www.npmjs.com/package/dictionaryjs) - npm install dictionaryjs
+* Node package [replace](https://www.npmjs.com/package/replace) - npm install replace
+* Node package [jasmine-reporters](https://www.npmjs.com/package/jasmine-reporters) - npm install jasmine-reporters@1.0.1
+* Node package [jasmine-spec-reporter](https://www.npmjs.com/package/jasmine-spec-reporter) - npm install jasmine-spec-reporter@1.1.0
 
 **Optional**
-* Node package ***[async](https://www.npmjs.com/package/async)*** - npm install async
+* Node package [async](https://www.npmjs.com/package/async) - npm install async
 
-## Intro
-Pasilla is a framework that allows a tester to create Protractor tests without writing any JavaScript code.  The tester uses familiar tools to simply assemble a sequence of keywords and data into a test script.  Excel is used to create the test script and is also used to maintain a centralised store of test data.  Pasilla provides utilities to automatically convert the Excel test script and data into pure JavaScript Protractor code.  This means that the tests can be run using any tool that supports Protractor like WebStorm IDE, Grunt and TeamCity.  So, Pasilla takes the pain out of developing Protractor tests without losing the benefits of the Jasmine BDD format and the integration with other tools.
+## About Pasilla
+Pasilla makes Protractor accessible to those users who want to create end-to-end tests but are are not comfortable with coding in Javascript within the Jasmine BDD framework or, to be frank, other BDD languages like Gherkin. So, with those users in mind, Pasilla is a framework that generates Protractor tests from keyword and data-driven test scripts. It neatly introduces a tabular keyword-driven scripting capability whilst keeping the benefits of  Protractor's Jasmine BDD format and its integration with IDEs and CI tools. The program code behind each keyword still needs to be written in JavaScript by a developer. Pasilla helps with this by standardising the way in which the keyword code is written - how it is called, how it handles data passed to it, and how it can be reused and combined with other keywords.
 
+The [wiki](https://github.com/jenglezou/pasilla/wiki) (see the sidebar on the right-hand side) provides more information.
 
-It all sounds a little too good to be true and, in a way, it is.  The JavaScript Protractor code underpinning each keyword still has to be handcrafted.  Pasilla helps with this by standardising the way in which the keyword program code is written - how it is called, how it handles data passed to it, and how it can be reused and combined with other keywords.
