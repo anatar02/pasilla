@@ -85,7 +85,7 @@ Sub WriteScriptJSFiles
 		    Set oWorkBook = oXL.Workbooks.Open(oXLSFile.Path)
 		
 			Set oFS = CreateObject("Scripting.FileSystemObject")
-			sVanillaFolder = oXLSFS.GetParentFolderName(oWorkbook.Path) & "\templates\"  
+			sVanillaFolder = oWorkbook.Path & "\"  
 			sTargetFolder = oWorkbook.Path & "\" & Left(oWorkbook.Name, (InStrRev(oWorkbook.Name, ".", -1, vbTextCompare) - 1)) & "\"
 			
 			On Error Resume Next
@@ -99,8 +99,8 @@ Sub WriteScriptJSFiles
 					'Not a script sheet
 				ElseIf Split(oSheet.Name, ".")(1) = "script" Then
 					sScriptName = Split(oSheet.Name, ".")(0)
-					iRows = oSheet.UsedRange.Rows.Count
-					iCols = oSheet.UsedRange.Columns.Count
+					iRows = oSheet.UsedRange.Rows(oSheet.UsedRange.Rows.Count).Row
+					iCols = oSheet.UsedRange.Columns(oSheet.UsedRange.Columns.Count).Column
 				
 					sLines = "var " & sScriptName & " = [" & vbNewLine
 					For iRow = 2 To iRows
