@@ -16,6 +16,7 @@ var TestData = (function () {
 		dictData.set('#ENVIRONMENT#', 'LIVE');
 		dictData.set('#VERSION#', '1');
 		dictData.set('#CREATEME#', 'True');
+		dictData.set('#SESSION1.USERNAME#', 'Jane');
 	};
 		return TestData;
 })();

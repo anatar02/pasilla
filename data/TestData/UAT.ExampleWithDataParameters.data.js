@@ -13,9 +13,10 @@ var TestData = (function () {
 		dictData.set('#{RANDOM2}#', 'RANDOM(10, 9999, 1)');
 		dictData.set('#SEQUENCE1#', '{SEQUENCE(100, 2)}');
 		dictData.set('#{SEQUENCE1}#', 'SEQUENCE(100, 2)');
-		dictData.set('#ENVIRONMENT#', 'LIVE');
+		dictData.set('#ENVIRONMENT#', 'UAT');
 		dictData.set('#VERSION#', '1');
 		dictData.set('#CREATEME#', 'True');
+		dictData.set('#SESSION1.USERNAME#', 'Jane');
 	};
 		return TestData;
 })();
