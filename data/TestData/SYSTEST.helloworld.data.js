@@ -3,8 +3,8 @@ var TestData = (function () {
 	    TestData.prototype.load = function (dictData) {
 		dictData.set('#USERNAME#', 'testuser1');
 		dictData.set('#PASSWORD#', '3X4mpl3');
-		dictData.set('#PARAM1#', 'data1');
-		dictData.set('#PARAM2#', 'data2');
+		dictData.set('#DATAITEM1#', 'data1');
+		dictData.set('#DATAITEM2#', 'data2');
 		dictData.set('#SESSION1.USERNAME#', 'John');
 		dictData.set('#NAME#', 'value');
 		dictData.set('#RANDOM1#', '{RANDOM(100, 20000, 10)}');
