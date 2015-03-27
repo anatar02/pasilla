@@ -108,12 +108,8 @@ Sub WriteScriptJSFiles
 						Case "", "HEADER":
 							RowType = HEADER
 							For iCol = 3 To iCols
-								If oSheet.Cells(iRow, iCol).Value = "" Then
-									Exit For
-								Else
-									ReDim Preserve arrHeader(iCol - 2)
-									arrHeader(iCol - 3) = oSheet.Cells(iRow, iCol).Value
-								End If
+								ReDim Preserve arrHeader(iCol - 2)
+								arrHeader(iCol - 3) = oSheet.Cells(iRow, iCol).Value
 							Next
 						Case Else:
 							RowType = ACTION
@@ -124,8 +120,10 @@ Sub WriteScriptJSFiles
 							sLines = sLines & vbTab & "[{action:'" & sAction & "',params:[{"
 							ReDim Preserve arrParams(UBound(arrHeader) + 1)
 							For iCol = 3 To UBound(arrHeader) + 2
-								arrParams(iCol - 3) = oSheet.Cells(iRow, iCol).Value
-								sLines = sLines & arrHeader(iCol - 3) & ":'" & arrParams(iCol - 3) & "',"
+								If arrHeader(iCol - 3) <> "" Then 
+									arrParams(iCol - 3) = oSheet.Cells(iRow, iCol).Value
+									sLines = sLines & arrHeader(iCol - 3) & ":'" & arrParams(iCol - 3) & "',"
+								End If
 							Next
 							sLines = Mid(sLines, 1, Len(sLines) - 1) & "}]}]," & vbNewLine
 						End Select
