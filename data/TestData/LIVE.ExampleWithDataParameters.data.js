@@ -1,6 +1,6 @@
 var TestData = (function () {
-	   function TestData() {}
-	    TestData.prototype.load = function (dictData) {
+	function TestData() {}
+	TestData.prototype.load = function (dictData) {
 		dictData.set('#USERNAME#', 'testuser1');
 		dictData.set('#PASSWORD#', '3X4mpl3');
 		dictData.set('#DATAITEM1#', 'data1');
@@ -18,6 +18,6 @@ var TestData = (function () {
 		dictData.set('#CREATEME#', 'True');
 		dictData.set('#SESSION1.USERNAME#', 'Jane');
 	};
-		return TestData;
+	return TestData;
 })();
 module.exports = TestData;
