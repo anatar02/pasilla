@@ -1,20 +1,47 @@
+var replace = require("replace");
+
 var Dictionary = require('dictionaryjs');
 var dictData = new Dictionary();
-
-try {
-    var TestData = require("../../data/TestData/" + browser.params.testEnv + ".Example.data.js");
-    var testData = new TestData();
-    testData.load(dictData);
-} catch(err) {
-    console.log(err)
-}
 
 // -------------------------------------------------------------------------
 // -------------------------------------------------------------------------
 describe('Pre-test setup for Example', function () {
+    it("Reset PLACEHOLDERs for Example test script", function () {
+        var sKey = "";
+        var sReplacement = "";
+
+        try {
+            var TestData = require("../../tests/TestData/" + browser.params.testEnv + ".Example.data.js");
+            var testData = new TestData();
+            testData.load(dictData);
+        } catch(err) {
+            console.log(err)
+        }
+
+        dictData.forEach(function(dicKey, dicValue) {
+            switch(dicKey.substr(1, 1).toUpperCase()){
+                case "{":
+                    //{PARAMETER)) --> replacement
+                    sKey = "'#" + dicKey.substr(2, dicKey.length-4) + "#'" ;
+                    sReplacement = sKey + ", '{" + dicValue + "}');";
+                    console.log ("Reset Placeholder " + sKey + " to " + sReplacement);
+
+                    replace({
+                        regex: sKey + ', .*',
+                        replacement: sReplacement,
+                        paths: ["./tests/TestData/" + browser.params.testEnv + ".Example.data.js"],
+                        recursive: false,
+                        silent: true
+                    });
+
+                    break;
+                default:
+                    break;
+            }
+        });
+    }, 600000);
 
     it("Set PLACEHOLDERs for Example test script", function () {
-        var replace = require("replace");
         var sReplacement = "";
 
         var iMinValue = 0;
@@ -25,6 +52,15 @@ describe('Pre-test setup for Example', function () {
         var iIncrement = 0;
         var sResetOrigLine = "";
         var sResetNewLine = "";
+
+        try {
+            delete require.cache[require.resolve("../../tests/TestData/" + browser.params.testEnv + ".Example.data.js")];
+            var TestData = require("../../tests/TestData/" + browser.params.testEnv + ".Example.data.js");
+            var testData = new TestData();
+            testData.load(dictData);
+        } catch(err) {
+            console.log(err)
+        }
 
         dictData.forEach(function(dicKey, dicValue) {
             switch(dicValue.substr(1,4).toUpperCase()){
@@ -38,7 +74,7 @@ describe('Pre-test setup for Example', function () {
                     replace({
                         regex: dicValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                         replacement: sReplacement,
-                        paths: ["./data/TestData/" + browser.params.testEnv + ".Example.data.js"],
+                        paths: ["./tests/TestData/" + browser.params.testEnv + ".Example.data.js"],
                         recursive: false,
                         silent: true
                     });
@@ -53,9 +89,9 @@ describe('Pre-test setup for Example', function () {
                     console.log ("Placeholder " + dicKey + " = " + dicValue + " (" + dicValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ") set to " + sReplacement);
 
                     replace({
-                        regex: dicValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), 
+                        regex: dicValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                         replacement: sReplacement,
-                        paths: ["./data/TestData/" + browser.params.testEnv + ".Example.data.js"],
+                        paths: ["./tests/TestData/" + browser.params.testEnv + ".Example.data.js"],
                         recursive: false,
                         silent: true
                     });
@@ -68,16 +104,15 @@ describe('Pre-test setup for Example', function () {
                     replace({
                         regex: sResetOrigLine.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                         replacement: sResetNewLine,
-                        paths: ["./data/TestData/" + browser.params.testEnv + ".Example.data.js"],
+                        paths: ["./tests/TestData/" + browser.params.testEnv + ".Example.data.js"],
                         recursive: false,
                         silent: true
                     });
-
-
                     break;
                 default:
                     break;
             }
         });
     }, 600000);
+
 }, 600000);

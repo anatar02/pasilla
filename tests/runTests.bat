@@ -1,4 +1,2 @@
-cmd /c protractor protractorConfig.js --params.testEnv=%1 --capabilities.maxInstances=99 --capabilities.browserName="%2" --capabilities.shardTestFiles=true --specs="tests\AngularJSYourName\all.pro.reset.js"
 cmd /c protractor protractorConfig.js --params.testEnv=%1 --capabilities.maxInstances=99 --capabilities.browserName="%2" --capabilities.shardTestFiles=true --specs="tests\AngularJSYourName\all.pro.setup.js"
 cmd /c protractor protractorConfig.js --params.testEnv=%1 --capabilities.maxInstances=99 --capabilities.browserName="%2" --capabilities.shardTestFiles=true --specs="tests\AngularJSYourName\*.pro.js"
-cmd /c protractor protractorConfig.js --params.testEnv=%1 --capabilities.maxInstances=99 --capabilities.browserName="%2" --capabilities.shardTestFiles=true --specs="tests\AngularJSYourName\all.pro.reset.js"
