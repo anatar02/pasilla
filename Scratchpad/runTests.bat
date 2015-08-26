@@ -1,0 +1,2 @@
+protractor protractorConfig.js --capabilities.browserName="internet explorer" --specs="AngularJSYourName.pro.js"
+protractor protractorConfig.js --capabilities.browserName="chrome" --specs="AngularJSYourName.pro.js"
