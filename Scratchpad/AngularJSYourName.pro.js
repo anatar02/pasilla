@@ -4,8 +4,9 @@ describe('AngularJSYourName', function () {
 // -----------------------------------------------------------------------------
 	it("Enter and check your name", function () {
 
-		element(by.model('yourName')).sendKeys('KARL');
-		expect(element(by.binding('yourName')).getText()).toEqual('Hello KARL!');
+		element(by.model('yourName')).sendKeys('CARL');
+		expect(element(by.binding('yourName')).getText()).toEqual('Hello CARL!');
+		//expect(element(by.binding('yourName')).getText()).toEqual('Hello Carl!');
 
 	}, 600000);
 
