@@ -16,6 +16,16 @@ exports.config = {
 		        savePath: 'c:/temp',
 		        filePrefix: 'xmloutput'
     	}));
+		
+		
+		var htmlReporter = require('protractor-jasmine2-html-reporter');
+		jasmine.getEnv().addReporter(new htmlReporter({
+			savePath: 'c:/temp/',
+			screenshotsFolder: 'images',
+			takeScreenshots: true,
+			takeScreenshotsOnlyOnFailures: false
+		}));
+
 
 	},
 
