@@ -19,7 +19,7 @@ var Automation = (function () {
                 values[i] = [values[i]];
             }
             func.apply(this, values[i]);
-            jasmine.currentEnv_.currentSpec.description += ' (with "' + name + '" using ' + values[i].join(', ') + ')';
+            //jasmine.currentEnv_.currentSpec.description += ' (with "' + name + '" using ' + values[i].join(', ') + ')';
         }
     };
 
