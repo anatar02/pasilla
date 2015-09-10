@@ -1,6 +1,7 @@
 // Node packages that are required for the automated testing:
-// npm install jasmine-spec-reporter@1.1.0
-// npm install jasmine-reporters@1.0.0
+// npm install jasmine-spec-reporter
+// npm install jasmine-reporters
+// npm install protractor-jasmine2-html-reporter
 // npm install keyword
 // npm install dictionaryjs
 // npm install replace
@@ -45,7 +46,7 @@ exports.config = {
 				filePrefix: sBrowser + ".",
 				screenshotsFolder: 'images',
 				takeScreenshots: true,
-				takeScreenshotsOnlyOnFailures: true
+				takeScreenshotsOnlyOnFailures: false
 			}));
 		
 		});
@@ -56,7 +57,7 @@ exports.config = {
 
     params: {
         testEnv: 'local',
-        saveFolder: '/temp/AutomatedTestResults',
+        saveFolder: './results/',
         browserName: 'Browser'
      },
 
